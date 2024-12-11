@@ -1,0 +1,45 @@
+<div class="profileBox">
+    <img src="https://img.icons8.com/ios/150/000000/administrator-male--v1.png"/>
+    <h1>Name : <%= one.name %> </h1>
+    <h2>Registraion Number : <%= one.roll %> </h2>
+</div>
+<div class="stuTable">
+  <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Subject Name</th>
+          <th scope="col">Score (?/100)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Web Services and Server Technology</td>
+          <td><%= one.wsst %> </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Operating System</td>
+          <td><%= one.os %> </td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Design and Analysis of Algorithm</td>
+          <td><%= one.daa %> </td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Management Information System</td>
+          <td><%= one.mis %> </td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Social and Professional Issues in IT</td>
+          <td><%= one.spii %> </td>
+        </tr>
+      </tbody>
+    </table>
+    <h1 style="text-align: center;">Status : <%= one.status %> </h1>
+    <a href="/student/login" class="btn btn-primary">Back</a>
+</div>
