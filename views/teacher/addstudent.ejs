@@ -1,0 +1,49 @@
+<h2>Add a new Student</h2>
+<form method="POST" class="addStu" autocomplete="off">
+    
+    <div class="mb-3">
+        <label>Registration Number : </label>
+        <input type="text" name="roll" required class="form-control" id="exampleInputEmail1" >
+      </div>
+      <div class="mb-3">
+        <label >Name : </label>
+        <input type="text" name="name" required class="form-control" id="exampleInputEmail1">
+      </div>
+      <div class="mb-3">
+        <label >Web Services and Server Technology : </label>
+        <input type="number" name="wsst" class="form-control" id="exampleInputEmail1" >
+      </div>
+      <div class="mb-3">
+        <label >Operating System : </label>
+        <input type="number" name="os" class="form-control" id="exampleInputEmail1" >
+      </div>
+      <div class="mb-3">
+        <label >Design and Analysis of Algorithm : </label>
+        <input type="number" name="daa" class="form-control" id="exampleInputEmail1">
+      </div>
+      <div class="mb-3">
+        <label >Mangement Information System : </label>
+        <input type="number" name="mis" class="form-control" id="exampleInputEmail1">
+      </div>
+      <div class="mb-3">
+        <label >Social and Professional Issues in IT : </label>
+        <input type="number" name="spii" class="form-control" id="exampleInputEmail1">
+      </div>
+      <div class="mb-3">
+       <!-- 
+        <label >Status (Pass/Fail) : </label>
+        <input type="text" name="status" required class="form-control" id="exampleInputEmail1">
+     -->
+     <label >Status :    </label>
+     <input type="radio" value="Pass" name="status" id="exampleInputEmail1" required>
+     <label >Pass </label>
+     <input type="radio" value="Fail" name="status"  id="exampleInputEmail1" required>
+     <label >Fail </label>
+     
+
+      </div>
+
+
+    <button type="submit" class="btn btn-success">Add</button>
+    <a href="/teacher/viewall" class="btn btn-primary">View All</a>
+</form>

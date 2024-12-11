@@ -1,0 +1,38 @@
+<h2>Editing score of <%= user.name %> </h2>
+<form method="POST" class="addStu" autocomplete="off">
+    
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Registraion Number : </label>
+        <input type="text" name="roll" value="<%= user.roll  %> " required class="form-control" id="exampleInputEmail1" >
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Name : </label>
+        <input type="text" name="name" required class="form-control" value="<%= user.name  %> " id="exampleInputEmail1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Web Services and Server Technology : </label>
+        <input type="text" name="wsst" value="<%= user.wsst  %> " class="form-control" id="exampleInputEmail1" >
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Operating System : </label>
+        <input type="text" name="os" value="<%= user.os  %> " class="form-control" id="exampleInputEmail1" >
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Design and Analysis of Algorithm : </label>
+        <input type="text" name="daa" value="<%= user.daa  %> " class="form-control" id="exampleInputEmail1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Management Information System : </label>
+        <input type="text" name="mis" value="<%= user.mis  %> " class="form-control" id="exampleInputEmail1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Social and Professional Issues in IT : </label>
+        <input type="text" name="spii" value="<%= user.spii  %> " class="form-control" id="exampleInputEmail1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Status (pass/fail) : </label>
+        <input type="text" name="status" value="<%= user.status  %> " required class="form-control" id="exampleInputEmail1">
+      </div>
+    <button type="submit" class="btn btn-success">Update</button>
+    <a href="/teacher/viewall" class="btn btn-primary">View All</a>
+</form>
